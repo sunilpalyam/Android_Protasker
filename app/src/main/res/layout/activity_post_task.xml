@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PostTaskModule.PostTask_Activity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginStart="-8dp"
+            android:layout_marginTop="-17dp"
+            app:cardCornerRadius="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/backgroundImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="327dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/house_cleaning"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="58dp"
+                    android:padding="5sp"
+                    app:civ_border_width="1sp"
+                    app:civ_border_color="#BCBABA"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    app:layout_constraintStart_toStartOf="@id/backgroundImage"
+                    app:layout_constraintTop_toTopOf="@id/backgroundImage" />
+
+                <TextView
+                    android:id="@+id/postTaskTitle"
+                    android:layout_width="80dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="55dp"
+                    android:gravity="center"
+                    android:text="@string/post_task"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    app:layout_constraintStart_toEndOf="@id/backButton"
+                    app:layout_constraintTop_toTopOf="@id/backgroundImage" />
+
+                <TextView
+                    android:id="@+id/taskTitle"
+                    android:layout_width="181dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="186dp"
+                    android:text="House Cleaning"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="@id/backgroundImage"
+                    app:layout_constraintTop_toTopOf="@id/backgroundImage" />
+
+                <TextView
+                    android:id="@+id/reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="4.8 (365 reviews)"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"
+                    android:layout_marginStart="38dp"
+                    app:layout_constraintStart_toStartOf="@id/taskTitle"
+                    app:layout_constraintTop_toBottomOf="@id/taskTitle" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:layout_marginTop="274dp"
+            app:cardCornerRadius="47dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/card_view">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/taskTitleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="65dp"
+                    android:text="Task Title"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/letters_tenplus"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="67dp"
+                    android:text="10+"
+                    android:textColor="#3B238B"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_marginEnd="70dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="NotSibling" />
+
+
+                <EditText
+                    android:id="@+id/taskTitleValue"
+                    android:layout_width="319dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background"
+                    android:hint="@string/lorem_ipsum"
+                    android:padding="8dp"
+                    android:imeOptions="actionNext"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/taskTitleLabel" />
+
+                <TextView
+                    android:id="@+id/taskDateTimeLabel"
+                    android:layout_width="340dp"
+                    android:layout_height="214dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/task_date_time"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/taskTitleValue" />
+
+                <TextView
+                    android:id="@+id/budgetLabel"
+                    android:layout_width="52dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/budget"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/taskDateTimeLabel" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/inactive_button"
+                    android:gravity="center"
+                    android:text="@string/total"
+                    android:layout_marginRight="2dp"
+                    app:layout_constraintEnd_toStartOf="@+id/hourlyrate"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/budgetLabel" />
+
+                <TextView
+                    android:id="@+id/hourlyrate"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/active_button"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8sp"
+                    android:text="@string/hourly"
+                    android:layout_marginStart="-4dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/total"
+                    app:layout_constraintStart_toEndOf="@+id/total"
+                    app:layout_constraintTop_toTopOf="@+id/total" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="320dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/total">
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="22dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginTop="10dp"
+                        android:text="RM"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/amount"
+                        android:layout_width="138dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="5sp"
+                        android:background="@drawable/background"
+                        android:hint="500"
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                        app:layout_constraintStart_toEndOf="@+id/textView3"
+                        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout1"
+                        android:layout_width="110dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="20sp"
+                        android:background="@drawable/backgroundofhourly"
+                        app:layout_constraintBottom_toBottomOf="@+id/amount"
+                        app:layout_constraintStart_toEndOf="@+id/amount"
+                        app:layout_constraintTop_toTopOf="@+id/amount">
+
+
+                        <TextView
+                            android:id="@+id/decrement"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/value"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="1sp"
+                            android:layout_height="0dp"
+                            android:background="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/decrement"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/decrement"
+                            app:layout_constraintEnd_toStartOf="@+id/increment"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/decrement"
+                            app:layout_constraintTop_toTopOf="@+id/decrement" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="1sp"
+                            android:layout_height="0dp"
+                            android:background="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/value"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/increment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/value"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/value"
+                            app:layout_constraintTop_toTopOf="@+id/value" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/task_Descriptionlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/task_description"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                <TextView
+                    android:id="@+id/letters_Twenty_plus"
+                    android:layout_width="22dp"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="6dp"
+                    android:text="20+"
+                    android:layout_marginEnd="70dp"
+                    android:textColor="#3B238B"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+                <EditText
+                    android:id="@+id/taskdiscription"
+                    android:layout_width="319dp"
+                    android:layout_height="84dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background"
+                    android:ems="20"
+                    android:imeOptions="actionNext"
+                    android:gravity="start"
+                    android:hint="@string/lorem_ipsum"
+                    android:padding="8dp"
+                    android:paddingStart="30dp"
+                    android:textSize="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/task_Descriptionlabel" />
+                <TextView
+                    android:id="@+id/locationtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/location"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/taskdiscription" />
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="319dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/lorem_ipsum"
+                    android:imeOptions="actionDone"
+                    android:paddingStart="10dp"
+                    android:textSize="12dp"
+                    android:padding="0.5dp"
+                    android:drawableRight="@drawable/img"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/locationtitle" />
+                <TextView
+                    android:id="@+id/attachmentstitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/attachments"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/location" />
+                <EditText
+                    android:id="@+id/attachments"
+                    android:layout_width="319dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:textSize="12dp"
+                    android:padding="0.5dp"
+                    android:drawableRight="@drawable/img"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/attachmentstitle" />
+                <TextView
+                    android:id="@+id/No_of_workers_youneed_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/no_of_workers"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/attachments" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="110dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/backgroundofhourly"
+                    app:layout_constraintBottom_toBottomOf="@+id/No_of_workers_youneed_title"
+                    app:layout_constraintStart_toEndOf="@+id/No_of_workers_youneed_title"
+                    app:layout_constraintTop_toTopOf="@+id/No_of_workers_youneed_title">
+
+
+                    <TextView
+                        android:id="@+id/workersDecrement"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/workersValue"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view11"
+                        android:layout_width="1sp"
+                        android:layout_height="0dp"
+                        android:background="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/workersDecrement"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/workersValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="@+id/workersDecrement"
+                        app:layout_constraintEnd_toStartOf="@+id/workersIncrement"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/workersDecrement"
+                        app:layout_constraintTop_toTopOf="@+id/workersDecrement" />
+
+                    <View
+                        android:id="@+id/view22"
+                        android:layout_width="1sp"
+                        android:layout_height="0dp"
+                        android:background="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/workersValue"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/workersIncrement"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="@+id/workersValue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/workersValue"
+                        app:layout_constraintTop_toTopOf="@+id/workersValue" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/canthistaskdonebyremotely"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/can_this_task"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout2" />
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="45dp"
+                    android:layout_height="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/canthistaskdonebyremotely"
+                    app:layout_constraintEnd_toEndOf="@+id/layout2"
+                    app:layout_constraintTop_toTopOf="@+id/canthistaskdonebyremotely" />
+
+                <TextView
+                    android:id="@+id/posttaskbutton"
+                    android:layout_width="290dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/backgroundofposttask"
+                    android:gravity="center"
+                    android:text="@string/post_task"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/canthistaskdonebyremotely" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

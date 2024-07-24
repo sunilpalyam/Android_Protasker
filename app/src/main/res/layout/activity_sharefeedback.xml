@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareFeedback.Sharefeedback">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/feedback_categeryback"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_marginStart="10sp"
+            android:src="@drawable/categery_back"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1.2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sharefeedback"
+            android:layout_width="132sp"
+            android:layout_height="41sp"
+            android:layout_marginStart="30sp"
+            android:text="Share Feed back"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/feedback_categeryback"
+            app:layout_constraintStart_toEndOf="@+id/feedback_categeryback"
+            app:layout_constraintTop_toTopOf="@+id/feedback_categeryback"
+            app:layout_constraintVertical_bias="0.4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/experience"
+        android:layout_width="match_parent"
+        android:layout_height="33sp"
+        android:text="How was your experience"
+        android:textColor="@color/black"
+        android:layout_marginStart="55sp"
+        android:layout_marginEnd="55sp"
+        android:layout_marginTop="75sp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout"
+        android:layout_width="183sp"
+        android:layout_height="24sp"
+        android:layout_marginTop="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/experience"
+        app:layout_constraintStart_toStartOf="@+id/experience"
+        app:layout_constraintTop_toBottomOf="@+id/experience">
+
+
+        <ImageView
+            android:id="@+id/feedback1"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/feedback2"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_marginStart="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/feedback1"
+            app:layout_constraintStart_toEndOf="@+id/feedback1"
+            app:layout_constraintTop_toTopOf="@+id/feedback1" />
+
+
+        <ImageView
+            android:id="@+id/feedback3"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_marginStart="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/feedback2"
+            app:layout_constraintStart_toEndOf="@+id/feedback2"
+            app:layout_constraintTop_toTopOf="@+id/feedback2" />
+
+
+        <ImageView
+            android:id="@+id/feedback4"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_marginStart="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/feedback3"
+            app:layout_constraintStart_toEndOf="@+id/feedback3"
+            app:layout_constraintTop_toTopOf="@+id/feedback3" />
+
+
+        <ImageView
+            android:id="@+id/feedback5"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_marginStart="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/feedback4"
+            app:layout_constraintStart_toEndOf="@+id/feedback4"
+            app:layout_constraintTop_toTopOf="@+id/feedback4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayoutfeedback"
+        android:layout_width="match_parent"
+        android:layout_height="106sp"
+        android:layout_marginStart="60sp"
+        android:layout_marginEnd="60sp"
+        android:layout_marginTop="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintlayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintlayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintlayout" >
+
+        <TextView
+            android:id="@+id/Feedbacktittle"
+            android:layout_width="257sp"
+            android:layout_height="20sp"
+           android:layout_marginTop="20sp"
+            android:text="Suggest anything we can improve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayoutsendfeedback"
+        android:layout_width="304sp"
+        android:layout_height="44sp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/custom_background"
+        app:layout_constraintEnd_toEndOf="@+id/ConstraintLayoutfeedback"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/ConstraintLayoutfeedback"
+        app:layout_constraintTop_toBottomOf="@+id/ConstraintLayoutfeedback">
+
+
+        <TextView
+
+            android:id="@+id/sendfeedback"
+            android:layout_width="106sp"
+            android:layout_height="23sp"
+            android:text="Send Feedback "
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        
+        
+        
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

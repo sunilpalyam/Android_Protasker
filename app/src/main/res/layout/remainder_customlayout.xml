@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="343dp"
+        android:layout_height="543dp"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/reminderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/reminder"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/remainderTitleLabel"
+                android:layout_width="98dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="65dp"
+                android:text="@string/reminder_ttl"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/reaminderTitleValue"
+                android:layout_width="306dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background"
+                android:hint="@string/lorem_ipsum"
+                android:padding="8dp"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/remainderTitleLabel" />
+
+            <TextView
+                android:id="@+id/taskDateTimeLabel"
+                android:layout_width="286dp"
+                android:layout_height="210dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background"
+                android:text="@string/task_date_time"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reaminderTitleValue" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:textColor="#A5A4A4"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="#E0DBD5"
+                app:layout_constraintBottom_toBottomOf="@+id/button7"
+                app:layout_constraintEnd_toStartOf="@+id/button7"
+                app:layout_constraintHorizontal_bias="0.7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/taskDateTimeLabel"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="76dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="92dp"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:background="@drawable/savebg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button6" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PostTaskModule.PostTask_Activity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/backButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="57dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="1sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/add_emergency_contacts_title"
+            android:layout_width="205dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="54dp"
+            android:gravity="center"
+            android:text="@string/add_emergency_cnt"
+            android:textColor="@android:color/black"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/backButton"
+            app:layout_constraintStart_toEndOf="@id/backButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="355dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="129dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/contactImage"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/addFromContact"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="@string/add_from_cnt"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/contactImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/addContact"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/orTitle"
+            android:layout_width="20sp"
+            android:layout_height="41dp"
+            android:layout_marginTop="207dp"
+            android:gravity="center"
+            android:text="Or"
+            android:textColor="@android:color/black"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameofContactpersontitle"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="256dp"
+            android:gravity="center"
+            android:text="@string/cnt_person"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/taskTitleValue"
+            android:layout_width="319dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="286dp"
+            android:background="@drawable/background"
+            android:padding="8dp"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintlayout1"
+            android:layout_width="347dp"
+            android:layout_height="57sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="361dp"
+            android:layout_marginEnd="42sp"
+            android:background="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="26sp"
+                android:layout_height="17sp"
+                android:layout_marginStart="10sp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/countrycode"
+                android:layout_width="wrap_content"
+                android:layout_height="17sp"
+                android:layout_marginStart="10sp"
+                android:text="+91"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/flag"
+                app:layout_constraintTop_toTopOf="@+id/flag" />
+
+            <ImageView
+                android:id="@+id/arrawdown"
+                android:layout_width="8sp"
+                android:layout_height="5sp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="@+id/countrycode"
+                app:layout_constraintStart_toEndOf="@+id/countrycode"
+                app:layout_constraintTop_toTopOf="@+id/countrycode" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                android:background="#999797"
+                app:layout_constraintBottom_toBottomOf="@id/countrycode"
+                app:layout_constraintStart_toEndOf="@id/countrycode"
+                app:layout_constraintTop_toTopOf="@id/countrycode"
+                app:layout_constraintVertical_bias="0.511" />
+
+            <EditText
+                android:id="@+id/mobilenumberenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/number"
+                android:textSize="13sp"
+                android:textColor="#999797"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/divider1"
+                app:layout_constraintHorizontal_bias="0.296"
+                app:layout_constraintStart_toEndOf="@+id/divider1"
+                app:layout_constraintTop_toTopOf="@+id/divider1"
+                app:layout_constraintVertical_bias="0.473" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/saveButton"
+            android:layout_width="304dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="747dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/save"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/backgroundofposttask"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

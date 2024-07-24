@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeModule.HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Constraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="206sp"
+        android:background="@color/pro_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView1"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="120sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:iconifiedByDefault="false"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:queryHint="Search" />
+
+        <TextView
+            android:id="@+id/location_name"
+            android:layout_width="70sp"
+            android:layout_height="25sp"
+            android:text="Location"
+            android:textColor="@color/white"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/location_home"
+            android:layout_width="15sp"
+            android:layout_height="20sp"
+            android:layout_marginTop="5sp"
+            android:src="@drawable/baseline_location_on_24"
+            android:layout_marginStart="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_name" />
+
+        <EditText
+            android:id="@+id/location_present"
+            android:layout_width="93sp"
+            android:layout_height="23sp"
+            android:text="Anantapur, Ap"
+            android:layout_marginStart="10sp"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/location_home"
+            app:layout_constraintStart_toEndOf="@+id/location_home"
+            app:layout_constraintTop_toTopOf="@+id/location_home" />
+
+        <ImageView
+            android:id="@+id/home_down_icon"
+            android:layout_width="10sp"
+            android:layout_height="6sp"
+            android:src="@drawable/baseline_keyboard_arrow_down_24"
+            app:layout_constraintBottom_toBottomOf="@+id/location_present"
+            app:layout_constraintStart_toEndOf="@+id/location_present"
+            app:layout_constraintTop_toTopOf="@+id/location_present" />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:src="@drawable/baseline_notifications_24"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/specials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Specials For You"
+        android:layout_marginTop="20sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Constraintlayout"/>
+
+    <TextView
+        android:id="@+id/see_all1"
+        android:layout_width="0sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="3sp"
+        android:text="See all"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textAlignment="viewEnd"
+        android:layout_marginRight="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/specials"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/specials"
+        app:layout_constraintTop_toTopOf="@+id/specials"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/specials_recylerview"
+        android:layout_width="0dp"
+        android:layout_height="130sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10sp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/specials"
+
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    <TextView
+        android:id="@+id/categeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Categories"
+        android:layout_marginTop="20sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/specials_recylerview"/>
+
+
+    <TextView
+        android:id="@+id/see_all2"
+        android:layout_width="0sp"
+        android:layout_height="25sp"
+        android:textAlignment="viewEnd"
+        android:layout_marginTop="3sp"
+        android:layout_marginRight="20sp"
+        android:text="See all"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/categeries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/categeries"
+        app:layout_constraintTop_toTopOf="@+id/categeries"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categeries_recylerview"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10sp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categeries"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Popular Services"
+        android:layout_marginTop="20sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categeries_recylerview"/>
+
+
+    <TextView
+        android:id="@+id/see_all3"
+        android:layout_width="0sp"
+        android:layout_height="25sp"
+      android:textAlignment="viewEnd"
+        android:layout_marginTop="3sp"
+        android:text="See all"
+        android:layout_marginRight="20sp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/popular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/popular"
+        app:layout_constraintTop_toTopOf="@+id/popular"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/populars_recylerview"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        app:layout_constrainedHeight="true"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popular"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout15"
+        android:layout_width="410sp"
+        android:layout_height="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/populars_recylerview">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/homeconstraintlayout"
+            android:layout_width="109sp"
+            android:layout_height="34sp"
+            android:background="@drawable/home"
+            android:layout_marginStart="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/homeicon"
+                android:layout_width="19sp"
+                android:layout_height="20sp"
+
+
+                android:src="@drawable/baseline_home_24"
+                android:layout_marginStart="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hometext"
+                android:layout_width="36sp"
+                android:layout_height="25sp"
+                android:text="Home"
+                android:textAlignment="center"
+                android:textColor="@color/pro_orange"
+                android:textSize="12sp"
+                android:layout_marginStart="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/homeicon"
+                app:layout_constraintStart_toEndOf="@+id/homeicon"
+                app:layout_constraintTop_toTopOf="@+id/homeicon" />
+            
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="16sp"
+            android:layout_height="20sp"
+            android:src="@drawable/baseline_document_scanner_24"
+            android:layout_marginStart="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/homeconstraintlayout"
+            app:layout_constraintStart_toEndOf="@+id/homeconstraintlayout"
+            app:layout_constraintTop_toTopOf="@+id/homeconstraintlayout" />
+
+
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="16sp"
+            android:layout_height="20sp"
+            android:layout_marginStart="35sp"
+            android:src="@drawable/baseline_saved_search_24"
+
+            app:layout_constraintBottom_toBottomOf="@+id/image1"
+            app:layout_constraintStart_toEndOf="@+id/image1"
+            app:layout_constraintTop_toTopOf="@+id/image1" />
+
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="16sp"
+            android:layout_height="20sp"
+            android:src="@drawable/baseline_message_24"
+            android:layout_marginStart="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image2"
+            app:layout_constraintStart_toEndOf="@+id/image2"
+            app:layout_constraintTop_toTopOf="@+id/image2" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="16sp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_height="20sp"
+            android:layout_marginStart="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image3"
+            app:layout_constraintStart_toEndOf="@+id/image3"
+            app:layout_constraintTop_toTopOf="@+id/image3" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

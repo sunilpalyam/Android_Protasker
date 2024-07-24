@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bank_Details_Activity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/backButton"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:civ_border_color="#BCBABA"
+        app:civ_border_width="1sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/bank_Details"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="54dp"
+        android:gravity="center"
+        android:text="@string/bank_dts"
+        android:textColor="@android:color/black"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backButton"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/bank_holder_name_title"
+        android:layout_width="121dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center_vertical"
+        android:text="@string/bank_dts"
+        android:textColor="@android:color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <EditText
+        android:id="@+id/bank_holder_name"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="180dp"
+        android:hint="@string/lorem_ipsum"
+        android:textColorHint="#111111"
+        android:background="@drawable/background"
+        android:padding="8dp"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/bank_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="234dp"
+        android:gravity="center_vertical"
+        android:text="@string/bank_name"
+        android:textColor="@android:color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/bank_name"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="265dp"
+        android:hint="@string/lorem_ipsum"
+        android:textColorHint="#111111"
+        android:background="@drawable/background"
+        android:padding="8dp"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/accountNumber_title"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="321dp"
+        android:gravity="center_vertical"
+        android:text="@string/act_number"
+        android:textColor="@android:color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <EditText
+        android:id="@+id/accountNumber"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="350dp"
+        android:hint="@string/lorem_ipsum"
+        android:textColorHint="#111111"
+        android:background="@drawable/background"
+        android:padding="8dp"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/posttaskbutton"
+        android:layout_width="290dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/backgroundofposttask"
+        android:gravity="center"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

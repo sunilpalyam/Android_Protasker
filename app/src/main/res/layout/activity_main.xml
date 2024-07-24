@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginpageModule.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/protasker_tittle"
+        android:layout_width="276sp"
+        android:layout_height="101sp"
+        android:layout_marginTop="75sp"
+        android:src="@drawable/logo3x"
+        android:layout_marginLeft="49sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/welcome_tittle"
+        android:layout_width="160sp"
+        android:layout_height="57sp"
+        android:text="Welcome"
+        android:textStyle=""
+        android:textSize="38sp"
+        android:textColor="#000000"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="42sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/protasker_tittle"/>
+
+    <TextView
+        android:id="@+id/welcome_description"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_marginLeft="42sp"
+        android:layout_marginRight="42sp"
+        android:text="To Best OutSourcing Platform"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_tittle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="57sp"
+        android:background="@drawable/loginborderbackground"
+        android:layout_marginStart="42sp"
+        android:layout_marginEnd="42sp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_description"  >
+
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="26sp"
+            android:layout_height="17sp"
+            android:layout_marginStart="10sp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/countrycode"
+            android:layout_width="wrap_content"
+            android:layout_height="17sp"
+            android:text="+91"
+            android:textSize="12sp"
+            android:textColor="@color/pro_black"
+            android:layout_marginStart="10sp"
+            app:layout_constraintStart_toEndOf="@+id/flag"
+            app:layout_constraintTop_toTopOf="@+id/flag" />
+
+        <ImageView
+            android:id="@+id/arrawdown"
+            android:layout_width="8sp"
+            android:layout_height="5sp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="@+id/countrycode"
+            app:layout_constraintStart_toEndOf="@+id/countrycode"
+            app:layout_constraintTop_toTopOf="@+id/countrycode"
+             />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/countrycode"
+            app:layout_constraintStart_toEndOf="@id/countrycode"
+            app:layout_constraintTop_toTopOf="@id/countrycode"
+            app:layout_constraintVertical_bias="0.511" />
+
+        <EditText
+            android:id="@+id/mobilenumberenter"
+            android:layout_width="0sp"
+            android:layout_height="35sp"
+            android:hint="Enter Your Mobile Number"
+            android:inputType="number"
+            android:textSize="13sp"
+            android:maxLength="10"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/divider1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintStart_toEndOf="@+id/divider1"
+            app:layout_constraintTop_toTopOf="@+id/divider1"
+            app:layout_constraintVertical_bias="0.473" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout2"
+        android:layout_width="323sp"
+        android:layout_height="57sp"
+        android:layout_marginTop="40sp"
+        android:background="@color/pro_orange"
+        app:layout_constraintEnd_toEndOf="@+id/constraintlayout1"
+        app:layout_constraintStart_toStartOf="@+id/constraintlayout1"
+        app:layout_constraintTop_toBottomOf="@+id/constraintlayout1">
+
+        <TextView
+            android:id="@+id/verificationcode"
+            android:layout_width="191sp"
+            android:layout_height="27sp"
+            android:text="Get Verification Code"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_marginTop="20sp"
+        android:textSize="17sp"
+        android:text="skip"
+        android:layout_marginRight="70sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintlayout2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

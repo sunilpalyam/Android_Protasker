@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileModule.ProfileActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="41sp"
+        android:layout_marginTop="113sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:text="Complete Your Profile"
+        android:textColor="@color/pro_black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="108sp"
+        android:layout_marginTop="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="107sp"
+            android:layout_height="108sp"
+            android:src="@drawable/profileimage"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1.2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profiledit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profile" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="80sp"
+        android:layout_height="24sp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:text="First Name"
+        android:textColor="@color/pro_text_names"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintlayout" />
+
+    <EditText
+        android:id="@+id/edit_firstname"
+        android:layout_width="323sp"
+        android:layout_height="48sp"
+        android:layout_marginRight="35sp"
+        android:layout_marginLeft="35sp"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstname" />
+
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="80sp"
+        android:layout_height="24sp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:text="Last Name"
+        android:textColor="@color/pro_text_names"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_firstname" />
+
+    <EditText
+        android:id="@+id/edit_lastname"
+        android:layout_width="323sp"
+        android:layout_height="48sp"
+        android:layout_marginLeft="35sp"
+        android:layout_marginRight="35sp"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastname" />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="80sp"
+        android:layout_height="24sp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="Address"
+        android:textColor="@color/pro_text_names"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_lastname" />
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="323sp"
+        android:layout_height="48sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="35sp"
+        android:layout_marginLeft="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address"/>
+
+    <TextView
+        android:id="@+id/liketopost"
+        android:layout_width="300sp"
+        android:layout_height="24sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="40sp"
+        android:textColor="@color/pro_black"
+        android:text="What Would You Like to do in the Protasker?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_address"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="0sp"
+        android:layout_height="31sp"
+        android:layout_marginTop="20sp"
+        android:text="Posttask"
+        android:layout_marginLeft="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liketopost" />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="0sp"
+        android:layout_height="31sp"
+        android:text="Complete Task"
+        android:layout_marginStart="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox1"
+        app:layout_constraintStart_toEndOf="@+id/checkbox1"
+        app:layout_constraintTop_toTopOf="@+id/checkbox1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout1"
+        android:layout_width="323sp"
+        android:layout_height="57sp"
+        android:layout_marginTop="40sp"
+        android:background="@color/pro_orange"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox2">
+
+        <TextView
+            android:id="@+id/completeprofile"
+            android:layout_width="191sp"
+            android:layout_height="27sp"
+            android:text="Complete Profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostTaskModule.TaskPosted_Activity">
+
+    <ImageView
+        android:id="@+id/gifImage"
+        android:layout_width="467dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="-37dp"
+        android:layout_marginTop="-4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskPostedTitle"
+        android:layout_width="201dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="410dp"
+        android:gravity="center"
+        android:text="@string/task_posted"
+        android:textColor="@android:color/white"
+        android:textSize="32dp"
+        android:background="@drawable/backgroundofhourly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/gifImage"
+        app:layout_constraintTop_toTopOf="@id/gifImage" />
+
+    <TextView
+        android:id="@+id/taskpostedtext"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="63dp"
+        android:text="@string/task_posted_sucessfully"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginTop="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+    <TextView
+        android:id="@+id/viewtaskDetails"
+        android:layout_width="331dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="580dp"
+        android:gravity="center"
+        android:text="@string/v_t_details"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:layout_marginStart="34dp"
+        android:background="@drawable/backgroundofhourly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/gifImage"
+        app:layout_constraintTop_toTopOf="@id/gifImage" />
+
+    <TextView
+        android:id="@+id/backtohome"
+        android:layout_width="331dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/backgroundofbacktohome"
+        android:gravity="center"
+        android:text="@string/b_to_home"
+        android:textColor="@color/orange"
+        android:textSize="18dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/gifImage"
+        app:layout_constraintTop_toTopOf="@id/gifImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

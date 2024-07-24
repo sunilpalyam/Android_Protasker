@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProTasker"
+        tools:targetApi="31">
+        <activity
+            android:name=".Bank_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MyAccountModule.Add_Emergency_contacts_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MyAccountModule.Emergency_Contacts_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MyAccountModule.ReferAndEarnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostTaskDetails_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".PostTaskModule.TaskPosted_Activity"
+            android:exported="false" />
+
+        <activity
+
+            android:name=".ShareFeedback.Sharefeedback" android:exported="false"/>
+
+        <activity
+            android:name=".HelpCenterModule.HelpcenterActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".CategeryViewModule.CategoryviewActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".HomeModule.CategeriesActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".HomeModule.HomeActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".LocationModule.EnterlocationActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".LocationModule.LoctionInputActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ProfileModule.ProfileActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".LoginpageModule.EnterCodeActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".PostTaskModule.PostTask_Activity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".LoginpageModule.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

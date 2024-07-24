@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">ProTasker</string>
+    <string name="task_date_time"><![CDATA[Task Date & Time]]></string>
+    <string name="post_task">Post Task</string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
+    <string name="budget">Budget</string>
+    <string name="total">total</string>
+    <string name="hourly">Hourly</string>
+    <string name="task_description">Task Description</string>
+    <string name="location">Location</string>
+    <string name="attachments">Attachments</string>
+    <string name="no_of_workers">No of workers you need</string>
+    <string name="can_this_task">can this task done by remotely ?</string>
+    <string name="task_details">Task Details</string>
+    <string name="house_clean">House Cleaning</string>
+    <string name="task_date">Task Date</string>
+    <string name="posted">Posted By</string>
+    <string name="date_time">July 04, 2024 | 11:00 AM</string>
+    <string name="name">Jenny Wilson</string>
+    <string name="address">2972 Westheimer Rd. Santa
+Ana, Illinois 85486</string>
+    <string name="description">Description</string>
+    <string name="description_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</string>
+    <string name="estimated_hrs">Estimated Hours</string>
+    <string name="hrs">2 Hours</string>
+    <string name="t_Price">Task Price</string>
+    <string name="w_offer">Waiting for Offer</string>
+    <string name="offers">Offers(0)</string>
+    <string name="ques">Questions(0)</string>
+    <string name="ques_text">Please don\'t share personal info-insurance won\'t apply to
+tasks not done through Protasker</string>
+    <string name="write_ques">Write your question here</string>
+    <string name="task_posted">Task Posted!</string>
+    <string name="task_posted_sucessfully">Your task has been posted successfully.
+You\'ll be notified as soon as you receive
+ an offer.</string>
+    <string name="v_t_details">Vew Task Details</string>
+    <string name="b_to_home">Back to Home</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder_ttl">Reminder Title</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="refer_friend">Refer Your Friend and Earn</string>
+    <string name="more_than">More Than</string>
+    <string name="referral_code">Your Referral Code</string>
+    <string name="code">683GTC7G</string>
+    <string name="c_code">Copy Code</string>
+    <string name="refer_text1">Refer your friend, In return you will get     5</string>
+    <string name="refer_text2">Your friend will get up to    25  promo codes</string>
+    <string name="refer_text3">If your friend completes a booking. you will get 10% from the task. max is capped at     100</string>
+    <string name="invite_frnd">Invite Friends</string>
+    <string name="emergency_cnt">Emergency contacts</string>
+    <string name="emergency_cnt_txt">up to 3 emergency contacts who will be notified via SMS anytime you require an emergency assistance</string>
+<string name="add_cnt">Add Contacts</string>
+    <string name="add_emergency_cnt">Add Emergency contacts</string>
+    <string name="add_from_cnt">Add from contacts</string>
+    <string name="cnt_person">Name of Contact person</string>
+    <string name="number">000 000 0000</string>
+    <string name="bank_dts">Bank Details</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="act_number">Account Number</string>
+    <string name="add">Add</string>
+
+
+</resources>

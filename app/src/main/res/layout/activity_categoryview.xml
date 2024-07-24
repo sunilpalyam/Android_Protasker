@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategeryViewModule.CategoryviewActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="327sp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/categery_img"
+            android:layout_width="match_parent"
+            android:layout_height="327sp"
+            android:background="@drawable/images"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_categeryback"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="30sp"
+            android:src="@drawable/baseline_arrow_categeryview"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1.2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_categeryshare"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_marginStart="204dp"
+            android:src="@drawable/baseline_share_24"
+            app:civ_border_color="@color/black"
+            android:padding="3sp"
+            app:civ_border_width="1.2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_categeryback"
+            app:layout_constraintStart_toEndOf="@+id/profile_categeryback"
+            app:layout_constraintTop_toTopOf="@+id/profile_categeryback"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_categerylike"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_marginStart="10sp"
+            android:src="@drawable/img"
+            android:padding="3sp"
+
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1.2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_categeryshare"
+            app:layout_constraintStart_toEndOf="@+id/profile_categeryshare"
+            app:layout_constraintTop_toTopOf="@+id/profile_categeryshare"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categery_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginStart="50sp"
+        android:layout_marginEnd="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <TextView
+
+        android:id="@+id/housecleaning_txt"
+        android:layout_width="181sp"
+        android:layout_height="41sp"
+        android:text="House Cleaning"
+        android:textStyle="bold"
+        android:layout_marginTop="55dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20sp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintlayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout1"
+        android:layout_width="129sp"
+        android:layout_height="25sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/housecleaning_txt">
+
+        <ImageView
+            android:id="@+id/categery_star"
+            android:layout_width="10sp"
+            android:layout_height="10sp"
+            android:layout_marginStart="3sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:layout_marginStart="25sp"
+            android:text="4.8(reviews)"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintlayout1">
+
+        <TextView
+            android:id="@+id/about_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="About"
+            android:textColor="@color/pro_text_names_frag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/gallery_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:text="Gallery"
+            android:textColor="@color/pro_text_names_frag"
+            app:layout_constraintBottom_toBottomOf="@id/about_tittle"
+            app:layout_constraintStart_toEndOf="@id/about_tittle"
+            app:layout_constraintTop_toTopOf="@id/about_tittle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/reviews_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="Reviews"
+            android:textColor="@color/pro_text_names_frag"
+            app:layout_constraintBottom_toBottomOf="@id/gallery_tittle"
+            app:layout_constraintStart_toEndOf="@id/gallery_tittle"
+            app:layout_constraintTop_toTopOf="@id/gallery_tittle"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:id="@+id/framelayout_views"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintlayout2" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/price_constraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/framelayout_views">
+
+        <TextView
+            android:id="@+id/view_price"
+            android:layout_width="34sp"
+            android:layout_height="23sp"
+            android:layout_marginStart="20sp"
+            android:text="Price"
+
+            android:textAlignment="center"
+            android:textColor="@color/pro_gal_tittle"
+
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/view_cost"
+            android:layout_width="35sp"
+            android:layout_height="32sp"
+
+            android:text="RM"
+            android:textColor="@color/pro_orange"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/view_price"
+            app:layout_constraintStart_toStartOf="@+id/view_price"
+            app:layout_constraintTop_toBottomOf="@+id/view_price" />
+
+        <TextView
+            android:id="@+id/view_cost_tittile"
+            android:layout_width="wrap_content"
+            android:layout_height="26sp"
+            android:layout_marginStart="4dp"
+            android:text="500 /hr"
+            android:textStyle="bold"
+            android:textColor="@color/pro_orange"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_cost"
+            app:layout_constraintStart_toEndOf="@+id/view_cost"
+            app:layout_constraintTop_toTopOf="@+id/view_cost"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/postyourtask_constraint"
+            android:layout_width="155sp"
+            android:layout_height="45sp"
+            android:layout_marginStart="45sp"
+            android:background="@drawable/backgroundofposttask"
+            app:layout_constraintBottom_toBottomOf="@+id/view_cost_tittile"
+            app:layout_constraintStart_toEndOf="@+id/view_cost_tittile"
+            app:layout_constraintTop_toTopOf="@+id/view_cost_tittile"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/postyourtask_text"
+                android:layout_width="135sp"
+                android:layout_height="25sp"
+                android:text="Post your task"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

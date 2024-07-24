@@ -28,12 +28,7 @@ public class PostTaskDetails_Activity extends AppCompatActivity {
             }
         });
 
-      /*  groupItems.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showPopupMenu(view);
-            }
-        });*/
+
     }
 
     private void showPopupMenu(View view) {

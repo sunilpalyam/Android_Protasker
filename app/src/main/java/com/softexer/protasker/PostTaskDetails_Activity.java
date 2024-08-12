@@ -28,7 +28,6 @@ public class PostTaskDetails_Activity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void showPopupMenu(View view) {
